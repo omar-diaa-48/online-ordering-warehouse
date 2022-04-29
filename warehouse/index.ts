@@ -3,6 +3,8 @@ import express, { Request, Response } from 'express'
 
 const app = express()
 
+app.use(express.json())
+
 const PORT = 9006
 
 let channel: Channel, connection: Connection
